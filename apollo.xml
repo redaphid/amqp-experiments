@@ -34,6 +34,7 @@
   <access_rule allow="admins" action="*"/>
   <access_rule allow="*" action="connect"/>
   <access_rule allow="*" action="send" kind="queue" id="meshblu"/>
+  <access_rule allow="*" action="create consume" kind="queue" id_regex="temp.*"/>
 
 
   <virtual_host id="meshblu">
