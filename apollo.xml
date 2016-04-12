@@ -29,11 +29,11 @@
   <log_category console="console" security="security" connection="connection" audit="audit"/>
 
 
-  <!-- <authentication domain="meshblu"/> -->
   <authentication domain="apollo"/>
   <!-- Give admins full access -->
   <access_rule allow="admins" action="*"/>
-  <access_rule allow="*" action="connect" kind="connector"/>
+  <access_rule allow="*" action="connect"/>
+  <access_rule allow="*" action="send" kind="queue" id="meshblu"/>
 
 
   <virtual_host id="meshblu">
